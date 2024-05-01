@@ -1,8 +1,24 @@
 ↑convertigo: 8.0.0.m006
 ↓lib_JasperReports [core.Project]: 
-  comment: Convertigo NGX builder Project
+  comment: |
+    'This is the Jasper reports library for Convertigo Low Code Platform. Use this Library to generate PDF Reports  on data. The library is based on JasperSoft reporting library.
+    
+    ## Usage
+    
+    You can provide a CSV files and a .jrxml report file to the library and call the GenerateReport Sequence. This will output a PDF report in the provided outpout path.
+    
+    ## Creating .jrxml files
+    
+    These report description files can be authored using JaperSoft Studio (Download from [https://community.jaspersoft.com/download-jaspersoft/community-edition/] 
+    
+    Your JRXML file must define a ROOT_PATH parameter to be used as prefix to any resource such as images used ion the report. See the data/Cherry_Landscape.jrxml sample
+    
+    ## Running the testcase
+    
+    Run the testCase ''TestOK'' to generate a sample PDF report. You will find the PDF report in the data/report.pdf file.'
   corsOrigin: =Origin
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓GenerateReport [sequences.GenericSequence]: 🗏 sequences/GenerateReport.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_3_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_3_0_ngx.zip

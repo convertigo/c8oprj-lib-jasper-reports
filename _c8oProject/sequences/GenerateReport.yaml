@@ -1,0 +1,85 @@
+comment: Generate a PDF report given a CSV file and a JRXML report file.
+↓Generate [steps.SimpleStep-1714579851727]: 
+  expression: |
+    '// We use the JavaImporter to import java classes with shorter names
+    var imports = new JavaImporter(
+    	java.io.File,
+    	java.io.FileNotFoundException,
+    	java.util.HashMap,
+    	net.sf.jasperreports.engine.JRException,
+    	net.sf.jasperreports.engine.JasperCompileManager,
+    	net.sf.jasperreports.engine.JasperFillManager,
+    	net.sf.jasperreports.engine.JasperPrint,
+    	net.sf.jasperreports.engine.JasperReport,
+    	net.sf.jasperreports.engine.data.JRCsvDataSource,
+    	net.sf.jasperreports.engine.export.JRPdfExporter,
+    	net.sf.jasperreports.export.ExporterInput,
+    	net.sf.jasperreports.export.SimpleExporterInput,
+    	net.sf.jasperreports.export.SimpleOutputStreamExporterOutput
+    );
+    
+    
+    // use the JavaImporter
+    with (imports) {
+    	csvFileName = context.getProjectDirectory()  + "/" + csvFileName;
+    	jrxmlFileName = context.getProjectDirectory() + "/" + jrxmlFileName;
+    	pdfFileName = context.getProjectDirectory() + "/" + pdfFileName;
+    
+    	// Compile the jrxml file
+    	log.info("Compiling JRXML file: " + jrxmlFileName);
+    	var jasperReport = JasperCompileManager.compileReport(jrxmlFileName);
+    
+    	// Create a new JRCsvDataSource object with the csv file
+    	log.info("Creating CSV data source: " + csvFileName);
+    	var dataSource = new JRCsvDataSource(csvFileName);
+    
+    	// Set the field delimiter
+    	dataSource.setFieldDelimiter('';''); // specify the field delimiter in your CSV
+        dataSource.setRecordDelimiter("\n"); // specify the record delimiter in your CSV
+        dataSource.setUseFirstRowAsHeader(true); // use the first row as header
+    
+    
+    	// Fill the report with the data source
+    	log.info("Filling the report with the data source");
+    	parameters = new HashMap();
+    	parameters.put("ROOT_PATH", context.getProjectDirectory() + "/");
+    	var jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+    
+    	// Export the report to a pdf file
+    	log.info("Exporting the report to a PDF file: " + pdfFileName);
+    	var exporter = new JRPdfExporter();
+    	var exporterInput = new SimpleExporterInput(jasperPrint);
+    	var exporterOutput = new SimpleOutputStreamExporterOutput(pdfFileName);
+    	exporter.setExporterInput(exporterInput);
+    	exporter.setExporterOutput(exporterOutput);
+    	exporter.exportReport();
+    
+    	// Return the pdf file name
+    	nbPages = jasperPrint.getPages().size();
+    }'
+↓generatedPages [steps.JsonFieldStep-1714598160229]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: generatedPages
+  value: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: nbPages
+↓csvFileName [variables.RequestableVariable-1714580154821]: 
+  comment: The CSV file name relative to the project's root
+↓jrxmlFileName [variables.RequestableVariable-1714580174708]: 
+  comment: The JRXML file relative to the project's root
+↓pdfFileName [variables.RequestableVariable-1714580187209]: 
+  comment: The output PDF file relative to the projects's root
+↓TestOK [core.TestCase]: 
+  ↓csvFileName [variables.TestCaseVariable-1714580426661]: 
+    value: data/data.csv
+  ↓jrxmlFileName [variables.TestCaseVariable-1714580426663]: 
+    value: data/Cherry_Landscape.jrxml
+  ↓pdfFileName [variables.TestCaseVariable-1714580426665]: 
+    value: data/report.pdf
