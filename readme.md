@@ -25,7 +25,6 @@ For more technical informations : [documentation](./project.md)
 - [Installation](#installation)
 - [Sequences](#sequences)
     - [GenerateReport](#generatereport)
-- [Mobile Library](#mobile-library)
 
 
 ## Installation
@@ -76,10 +75,6 @@ Generate a PDF report given a CSV file and a JRXML report file
 <td>pdfFileName</td><td>The output PDF file relative to the projects's root</td>
 </tr>
 </table>
-
-## Mobile Library
-
-Describes the mobile application global properties
 
 
 

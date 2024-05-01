@@ -78,19 +78,3 @@ The output PDF file relative to the projects's root
 </table>
 
 </p></blockquote></details>
-
-<details><summary><span style="color:DarkGoldenRod"><i>Mobile Application</i></span></summary><blockquote><p>
-
-
-## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/core/images/mobileapplication_color_16x16.png?raw=true "MobileApplication") Application
-
-Describes the mobile application global properties
-
-<details><summary><span style="color:DarkGoldenRod"><i>Pages</i></span></summary><blockquote><p>
-
-
-### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/pagecomponent_color_16x16.png?raw=true "PageComponent") Page
-
-My First Page as root page
-</p></blockquote></details>
-</p></blockquote></details>

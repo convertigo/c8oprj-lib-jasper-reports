@@ -22,11 +22,3 @@
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_3_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_3_0_ngx.zip
-  ↓Application [core.MobileApplication]: 
-    comment: Describes the mobile application global properties
-    splashRemoveMode: beforeUpdate
-    ↓Android [mobileplatforms.Android]: 
-      comment: Android platform
-    ↓iOS [mobileplatforms.IOs]: 
-      comment: iOS platform
-    ↓NgxApp [ngx.components.ApplicationComponent]: 🗏 mobileNgxApp.yaml
