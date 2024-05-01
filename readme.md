@@ -23,6 +23,8 @@ Run the testCase 'TestOK' to generate a sample PDF report. You will find the PDF
 For more technical informations : [documentation](./project.md)
 
 - [Installation](#installation)
+- [Sequences](#sequences)
+    - [GenerateReport](#generatereport)
 - [Mobile Library](#mobile-library)
 
 
@@ -39,18 +41,41 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     lib_JasperReports=C:/Users/opic_000/runtime-EclipseApplication/lib_JasperReports/.git:branch=master
+     lib_JasperReports=https://github.com/convertigo/c8oprj-lib-jasper-reports.git:branch=master
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     lib_JasperReports=C:/Users/opic_000/runtime-EclipseApplication/lib_JasperReports//archive/master.zip
+     lib_JasperReports=https://github.com/convertigo/c8oprj-lib-jasper-reports/archive/master.zip
      ```
      </td></tr>
     </table>
 3. Click the `Finish` button. This will automatically import the __lib_JasperReports__ project
 
+
+## Sequences
+
+### GenerateReport
+
+Generate a PDF report given a CSV file and a JRXML report file
+
+**variables**
+
+<table>
+<tr>
+<th>name</th><th>comment</th>
+</tr>
+<tr>
+<td>csvFileName</td><td>The CSV file name relative to the project's root</td>
+</tr>
+<tr>
+<td>jrxmlFileName</td><td>The JRXML file relative to the project's root</td>
+</tr>
+<tr>
+<td>pdfFileName</td><td>The output PDF file relative to the projects's root</td>
+</tr>
+</table>
 
 ## Mobile Library
 

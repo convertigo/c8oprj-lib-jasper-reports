@@ -1,4 +1,4 @@
-comment: Generate a PDF report given a CSV file and a JRXML report file.
+comment: Generate a PDF report given a CSV file and a JRXML report file
 ↓Generate [steps.SimpleStep-1714579851727]: 
   expression: |
     '// We use the JavaImporter to import java classes with shorter names
