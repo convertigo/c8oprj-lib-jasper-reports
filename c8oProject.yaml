@@ -17,6 +17,7 @@
     
     Run the testCase ''TestOK'' to generate a sample PDF report. You will find the PDF report in the data/report.pdf file.'
   corsOrigin: =Origin
+  version: 1.0
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓GenerateReport [sequences.GenericSequence]: 🗏 sequences/GenerateReport.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 

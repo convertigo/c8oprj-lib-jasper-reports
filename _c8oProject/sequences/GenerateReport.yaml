@@ -6,6 +6,7 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
     	java.io.File,
     	java.io.FileNotFoundException,
     	java.util.HashMap,
+    	java.lang.System,
     	net.sf.jasperreports.engine.JRException,
     	net.sf.jasperreports.engine.JasperCompileManager,
     	net.sf.jasperreports.engine.JasperFillManager,
@@ -21,6 +22,10 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
     
     // use the JavaImporter
     with (imports) {
+    	
+    	System.setProperty("java.awt.headless", "true");
+    	
+    
     	csvFileName = context.getProjectDirectory()  + "/" + csvFileName;
     	jrxmlFileName = context.getProjectDirectory() + "/" + jrxmlFileName;
     	pdfFileName = context.getProjectDirectory() + "/" + pdfFileName;
