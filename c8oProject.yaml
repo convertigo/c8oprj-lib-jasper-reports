@@ -17,8 +17,9 @@
     
     Run the testCase ''TestOK'' to generate a sample PDF report. You will find the PDF report in the data/report.pdf file.'
   corsOrigin: =Origin
-  version: 1.0
+  version: 1.1
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓AutoInit [sequences.GenericSequence-1714644260080]: 🗏 sequences/AutoInit.yaml
   ↓GenerateReport [sequences.GenericSequence]: 🗏 sequences/GenerateReport.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template

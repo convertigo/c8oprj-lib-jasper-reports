@@ -1,0 +1,6 @@
+accessibility: Private
+autoStart: true
+↓jIf [steps.IfStep-1714644288137]: 
+  condition: com.twinsoft.convertigo.engine.Engine.isLinux()
+  ↓install [steps.ProcessExecStep-1714644325844]: 
+    commandLine: '["sh","-c","sudo apt update; sudo apt install -y fontconfig"]'

@@ -24,6 +24,7 @@ For more technical informations : [documentation](./project.md)
 
 - [Installation](#installation)
 - [Sequences](#sequences)
+    - [AutoInit](#autoinit)
     - [GenerateReport](#generatereport)
 
 
@@ -40,13 +41,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     lib_JasperReports=https://github.com/convertigo/c8oprj-lib-jasper-reports.git:branch=master
+     lib_JasperReports=git@github.com:convertigo/c8oprj-lib-jasper-reports.git:branch=master
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     lib_JasperReports=https://github.com/convertigo/c8oprj-lib-jasper-reports/archive/master.zip
+     lib_JasperReports=git@github.com:convertigo/c8oprj-lib-jasper-reports/archive/master.zip
      ```
      </td></tr>
     </table>
@@ -54,6 +55,8 @@ For more technical informations : [documentation](./project.md)
 
 
 ## Sequences
+
+### AutoInit
 
 ### GenerateReport
 
