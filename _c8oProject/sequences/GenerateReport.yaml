@@ -27,7 +27,9 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
     	net.sf.jasperreports.engine.export.JRPdfExporter,
     	net.sf.jasperreports.export.ExporterInput,
     	net.sf.jasperreports.export.SimpleExporterInput,
-    	net.sf.jasperreports.export.SimpleOutputStreamExporterOutput
+    	net.sf.jasperreports.export.SimpleOutputStreamExporterOutput,
+    	
+    	com.twinsoft.convertigo.engine.Engine
     );
     
     
@@ -37,9 +39,15 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
     	System.setProperty("java.awt.headless", "true");
     	
     
+    	csvFileName = Engine.theApp.filePropertyManager.getFilepathFromProperty(csvFileName, context.projectName)
+    	jrxmlFileName = Engine.theApp.filePropertyManager.getFilepathFromProperty(jrxmlFileName, context.projectName)
+    	pdfFileName = Engine.theApp.filePropertyManager.getFilepathFromProperty(pdfFileName, context.projectName)
+    
+    /*
     	csvFileName = context.getProjectDirectory()  + "/" + csvFileName;
     	jrxmlFileName = context.getProjectDirectory() + "/" + jrxmlFileName;
     	pdfFileName = context.getProjectDirectory() + "/" + pdfFileName;
+    */
     
     	// Compile the jrxml file
     	log.info("Compiling JRXML file: " + jrxmlFileName);
@@ -112,8 +120,8 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
   comment: An array of objects containing variable keys and values
 ↓TestOK [core.TestCase]: 
   ↓csvFileName [variables.TestCaseVariable-1714580426661]: 
-    value: data/data.csv
+    value: .//data/data.csv
   ↓jrxmlFileName [variables.TestCaseVariable-1714580426663]: 
-    value: data/Cherry_Landscape.jrxml
+    value: .//data/Cherry_Landscape.jrxml
   ↓pdfFileName [variables.TestCaseVariable-1714580426665]: 
-    value: data/report.pdf
+    value: .//data/report.pdf

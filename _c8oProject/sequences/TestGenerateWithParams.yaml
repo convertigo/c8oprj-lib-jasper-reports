@@ -37,13 +37,13 @@ comment: A test sequence to test passing parameters
   sourceSequence: lib_JasperReports.GenerateReport
   ↓csvFileName [variables.StepVariable-1714726764072]: 
     comment: The CSV file name relative to the project's root
-    value: data/data.csv
+    value: .//data/data.csv
   ↓jrxmlFileName [variables.StepVariable-1714726764074]: 
     comment: The JRXML file relative to the project's root
-    value: data/Cherry_Landscape.jrxml
+    value: .//data/Cherry_Landscape.jrxml
   ↓pdfFileName [variables.StepVariable-1714726764076]: 
     comment: The output PDF file relative to the projects's root
-    value: data/report.pdf
+    value: .//data/report.pdf
   ↓jasperParams [variables.StepVariable-1714727807133]: 
     sourceDefinition: 
       - xmlizable: 
