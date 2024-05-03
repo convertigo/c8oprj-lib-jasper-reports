@@ -8,7 +8,7 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
         - java.lang.String: 
           - ↑value: 1714728054077
         - java.lang.String: 
-          - ↑value: ./jasperParams/array
+          - ↑value: ./jasperParams/*
   variableName: jasperParams
 ↓Generate [steps.SimpleStep-1714579851727]: 
   expression: |
