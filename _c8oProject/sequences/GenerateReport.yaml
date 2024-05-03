@@ -1,4 +1,15 @@
 comment: Generate a PDF report given a CSV file and a JRXML report file
+↓inputVars [steps.InputVariablesStep-1714728054077]: 
+↓jasperParams [steps.JsonSourceStep-1714728082473]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1714728054077
+        - java.lang.String: 
+          - ↑value: ./jasperParams/array
+  variableName: jasperParams
 ↓Generate [steps.SimpleStep-1714579851727]: 
   expression: |
     '// We use the JavaImporter to import java classes with shorter names
@@ -48,6 +59,21 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
     	log.info("Filling the report with the data source");
     	parameters = new HashMap();
     	parameters.put("ROOT_PATH", context.getProjectDirectory() + "/");
+    	
+    	
+    	log.warn("jasperParams: " + JSON.stringify(jasperParams));
+    	// for each jasperParams object having a dynamic key name and a value
+    	for (var jParam of jasperParams) {
+    		// get the key
+    		var key = Object.keys(jParam)[0];
+    	    // get the value
+    	    var value = jParam[key];			
+    		// add the parameter to the parameters map
+    		log.warn("key: " + key + " value: " + value);
+    		parameters.put(key, value);
+    	}
+    	
+    	
     	var jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
     
     	// Export the report to a pdf file
@@ -81,6 +107,8 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
   comment: The JRXML file relative to the project's root
 ↓pdfFileName [variables.RequestableVariable-1714580187209]: 
   comment: The output PDF file relative to the projects's root
+↓jasperParams [variables.RequestableVariable-1714727803335]: 
+  comment: An array of objects containing variable keys and values
 ↓TestOK [core.TestCase]: 
   ↓csvFileName [variables.TestCaseVariable-1714580426661]: 
     value: data/data.csv

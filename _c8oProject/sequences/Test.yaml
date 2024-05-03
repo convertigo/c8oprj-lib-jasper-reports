@@ -1,0 +1,50 @@
+↓array [steps.JsonArrayStep-1714726825725]: 
+  output: false
+  ↓object [steps.JsonObjectStep-1714727620316]: 
+    ↓field [steps.JsonFieldStep-1714726882109]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: param1
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: val1
+  ↓object1 [steps.JsonObjectStep-1714727712746]: 
+    ↓field1 [steps.JsonFieldStep-1714727712752]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: param2
+      value: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: val2
+↓Call_Sequence [steps.SequenceStep-1714726764070]: 
+  sourceSequence: lib_JasperReports.GenerateReport
+  ↓csvFileName [variables.StepVariable-1714726764072]: 
+    comment: The CSV file name relative to the project's root
+    value: data/data.csv
+  ↓jrxmlFileName [variables.StepVariable-1714726764074]: 
+    comment: The JRXML file relative to the project's root
+    value: data/Cherry_Landscape.jrxml
+  ↓pdfFileName [variables.StepVariable-1714726764076]: 
+    comment: The output PDF file relative to the projects's root
+    value: data/report.pdf
+  ↓jasperParams [variables.StepVariable-1714727807133]: 
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1714726825725
+          - java.lang.String: 
+            - ↑value: .

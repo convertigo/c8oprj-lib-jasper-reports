@@ -26,6 +26,7 @@ For more technical informations : [documentation](./project.md)
 - [Sequences](#sequences)
     - [AutoInit](#autoinit)
     - [GenerateReport](#generatereport)
+    - [Test](#test)
 
 
 ## Installation
@@ -74,12 +75,17 @@ Generate a PDF report given a CSV file and a JRXML report file
 <td>csvFileName</td><td>The CSV file name relative to the project's root</td>
 </tr>
 <tr>
+<td>jasperParams</td><td>An array of objects containing variable keys and values</td>
+</tr>
+<tr>
 <td>jrxmlFileName</td><td>The JRXML file relative to the project's root</td>
 </tr>
 <tr>
 <td>pdfFileName</td><td>The output PDF file relative to the projects's root</td>
 </tr>
 </table>
+
+### Test
 
 
 

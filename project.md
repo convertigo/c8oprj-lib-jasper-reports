@@ -72,6 +72,14 @@ The CSV file name relative to the project's root
 </tr>
 <tr>
 <td>
+<img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;jasperParams
+</td>
+<td>
+An array of objects containing variable keys and values
+</td>
+</tr>
+<tr>
+<td>
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;jrxmlFileName
 </td>
 <td>
@@ -87,6 +95,14 @@ The output PDF file relative to the projects's root
 </td>
 </tr>
 </table>
+
+</p></blockquote></details>
+
+<details><summary><b>Test</b></summary><blockquote><p>
+
+
+## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") Test
+
 
 </p></blockquote></details>
 </p></blockquote></details>

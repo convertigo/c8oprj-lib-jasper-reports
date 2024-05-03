@@ -21,6 +21,7 @@
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓AutoInit [sequences.GenericSequence-1714644260080]: 🗏 sequences/AutoInit.yaml
   ↓GenerateReport [sequences.GenericSequence]: 🗏 sequences/GenerateReport.yaml
+  ↓Test [sequences.GenericSequence]: 🗏 sequences/Test.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_3_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_3_0_ngx.zip
