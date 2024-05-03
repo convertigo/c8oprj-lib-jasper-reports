@@ -26,7 +26,7 @@ For more technical informations : [documentation](./project.md)
 - [Sequences](#sequences)
     - [AutoInit](#autoinit)
     - [GenerateReport](#generatereport)
-    - [Test](#test)
+    - [TestGenerateWithParams](#testgeneratewithparams)
 
 
 ## Installation
@@ -85,7 +85,9 @@ Generate a PDF report given a CSV file and a JRXML report file
 </tr>
 </table>
 
-### Test
+### TestGenerateWithParams
+
+A test sequence to test passing parameters
 
 
 

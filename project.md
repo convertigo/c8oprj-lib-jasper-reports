@@ -98,11 +98,11 @@ The output PDF file relative to the projects's root
 
 </p></blockquote></details>
 
-<details><summary><b>Test</b></summary><blockquote><p>
+<details><summary><b>TestGenerateWithParams</b> : A test sequence to test passing parameters</summary><blockquote><p>
 
 
-## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") Test
+## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") TestGenerateWithParams
 
-
+A test sequence to test passing parameters
 </p></blockquote></details>
 </p></blockquote></details>

@@ -1,3 +1,4 @@
+comment: A test sequence to test passing parameters
 ↓array [steps.JsonArrayStep-1714726825725]: 
   output: false
   ↓object [steps.JsonObjectStep-1714727620316]: 
