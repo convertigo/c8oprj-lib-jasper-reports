@@ -7,7 +7,7 @@ This is the Jasper reports library for Convertigo Low Code Platform. Use this Li
 
 ## Usage
 
-You can provide a CSV files and a .jrxml report file to the library and call the GenerateReport Sequence. This will output a PDF report in the provided outpout path.
+You can provide a CSV files and a .jrxml report file to the library and call the GenerateReport Sequence. This will output a PDF report in the provided output path.
 
 ## Creating .jrxml files
 
@@ -41,13 +41,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     lib_JasperReports=git@github.com:convertigo/c8oprj-lib-jasper-reports.git:branch=master
+     lib_JasperReports=https://github.com/convertigo/c8oprj-lib-jasper-reports.git:branch=master
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     lib_JasperReports=git@github.com:convertigo/c8oprj-lib-jasper-reports/archive/master.zip
+     lib_JasperReports=https://github.com/convertigo/c8oprj-lib-jasper-reports/archive/master.zip
      ```
      </td></tr>
     </table>
@@ -57,6 +57,8 @@ For more technical informations : [documentation](./project.md)
 ## Sequences
 
 ### AutoInit
+
+Initialize the lib on Linux systems and install needed dependencies
 
 ### GenerateReport
 

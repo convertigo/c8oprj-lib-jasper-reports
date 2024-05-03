@@ -5,7 +5,7 @@
     
     ## Usage
     
-    You can provide a CSV files and a .jrxml report file to the library and call the GenerateReport Sequence. This will output a PDF report in the provided outpout path.
+    You can provide a CSV files and a .jrxml report file to the library and call the GenerateReport Sequence. This will output a PDF report in the provided output path.
     
     ## Creating .jrxml files
     

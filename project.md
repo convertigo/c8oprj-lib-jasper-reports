@@ -5,7 +5,7 @@ This is the Jasper reports library for Convertigo Low Code Platform. Use this Li
 
 ## Usage
 
-You can provide a CSV files and a .jrxml report file to the library and call the GenerateReport Sequence. This will output a PDF report in the provided outpout path.
+You can provide a CSV files and a .jrxml report file to the library and call the GenerateReport Sequence. This will output a PDF report in the provided output path.
 
 ## Creating .jrxml files
 
@@ -36,12 +36,12 @@ does nothing
 <details><summary><span style="color:DarkGoldenRod"><i>Sequences</i></span></summary><blockquote><p>
 
 
-<details><summary><b>AutoInit</b></summary><blockquote><p>
+<details><summary><b>AutoInit</b> : Initialize the lib on Linux systems and install needed dependencies</summary><blockquote><p>
 
 
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png?raw=true "GenericSequence") AutoInit
 
-
+Initialize the lib on Linux systems and install needed dependencies
 </p></blockquote></details>
 
 <details><summary><b>GenerateReport</b> : Generate a PDF report given a CSV file and a JRXML report file</summary><blockquote><p>

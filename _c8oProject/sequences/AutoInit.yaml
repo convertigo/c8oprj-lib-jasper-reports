@@ -1,5 +1,6 @@
 accessibility: Private
 autoStart: true
+comment: Initialize the lib on Linux systems and install needed dependencies
 ↓jIf [steps.IfStep-1714644288137]: 
   condition: com.twinsoft.convertigo.engine.Engine.isLinux()
   ↓install [steps.ProcessExecStep-1714644325844]: 
