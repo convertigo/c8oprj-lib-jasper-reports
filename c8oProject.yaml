@@ -15,7 +15,21 @@
     
     ## Running the testcase
     
-    Run the testCase ''TestOK'' to generate a sample PDF report. You will find the PDF report in the data/report.pdf file.'
+    Run the testCase ''TestOK'' to generate a sample PDF report. You will find the PDF report in the data/report.pdf file.
+    
+    ## File Paths
+    
+    All file paths follows Convertigo file path resolution :
+    * .// is relative to the library project
+    * ./ is relative to the workspace
+    * Absolute path will not be modified
+    
+    So if you want to resolve file paths before calling the library you can use 
+    
+    <code> 
+    	ResolvedPath = Engine.theApp.filePropertyManager.getFilepathFromProperty(pathToresolve, context.projectName)
+    </code>
+    	'
   corsOrigin: =Origin
   version: 1.1
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml

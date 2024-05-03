@@ -17,6 +17,26 @@ Your JRXML file must define a ROOT_PATH parameter to be used as prefix to any re
 
 Run the testCase 'TestOK' to generate a sample PDF report. You will find the PDF report in the data/report.pdf file.
 
+## File Paths
+
+All file paths follows Convertigo file path resolution :
+* .// is relative to the library project
+* ./ is relative to the workspace
+* Absolute path will not be modified
+
+So if you want to resolve file paths before calling the library you can use 
+
+
+
+```
+ 
+	ResolvedPath = Engine.theApp.filePropertyManager.getFilepathFromProperty(pathToresolve, context.projectName)
+
+```
+
+
+	
+
 <details><summary><span style="color:DarkGoldenRod"><i>Connectors</i></span></summary><blockquote><p>
 
 
