@@ -2,6 +2,7 @@ comment: A test sequence to test passing parameters
 ↓array [steps.JsonArrayStep-1714726825725]: 
   output: false
   ↓object [steps.JsonObjectStep-1714727620316]: 
+    output: false
     ↓field [steps.JsonFieldStep-1714726882109]: 
       key: 
         - xmlizable: 
@@ -9,6 +10,7 @@ comment: A test sequence to test passing parameters
           - SmartType: 
             - ↑mode: PLAIN
             - →→: param1
+      output: false
       value: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
@@ -16,6 +18,7 @@ comment: A test sequence to test passing parameters
             - ↑mode: PLAIN
             - →→: val1
   ↓object1 [steps.JsonObjectStep-1714727712746]: 
+    output: false
     ↓field1 [steps.JsonFieldStep-1714727712752]: 
       key: 
         - xmlizable: 
@@ -23,6 +26,7 @@ comment: A test sequence to test passing parameters
           - SmartType: 
             - ↑mode: PLAIN
             - →→: param2
+      output: false
       value: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
