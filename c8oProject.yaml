@@ -31,7 +31,7 @@
     </code>
     	'
   corsOrigin: =Origin
-  version: 1.1
+  version: 1.2
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓AutoInit [sequences.GenericSequence-1714644260080]: 🗏 sequences/AutoInit.yaml
   ↓GenerateReport [sequences.GenericSequence]: 🗏 sequences/GenerateReport.yaml
