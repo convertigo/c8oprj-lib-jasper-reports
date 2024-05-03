@@ -53,3 +53,12 @@ comment: A test sequence to test passing parameters
             - ↑value: 1714726825725
           - java.lang.String: 
             - ↑value: .
+↓Copy [steps.XMLCopyStep-1714729566063]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1714726764070
+        - java.lang.String: 
+          - ↑value: ./document/generatedPages

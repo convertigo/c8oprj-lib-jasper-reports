@@ -61,18 +61,19 @@ comment: Generate a PDF report given a CSV file and a JRXML report file
     	parameters.put("ROOT_PATH", context.getProjectDirectory() + "/");
     	
     	
-    	log.warn("jasperParams: " + JSON.stringify(jasperParams));
     	// for each jasperParams object having a dynamic key name and a value
-    	for (var jParam of jasperParams) {
-    		// get the key
-    		var key = Object.keys(jParam)[0];
-    	    // get the value
-    	    var value = jParam[key];			
-    		// add the parameter to the parameters map
-    		log.warn("key: " + key + " value: " + value);
-    		parameters.put(key, value);
-    	}
-    	
+    	if (typeof(jasperParams) != "undefined") {
+    		log.warn("jasperParams: " + JSON.stringify(jasperParams));
+    		for (var jParam of jasperParams) {
+    			// get the key
+    			var key = Object.keys(jParam)[0];
+    		    // get the value
+    		    var value = jParam[key];			
+    			// add the parameter to the parameters map
+    			log.warn("key: " + key + " value: " + value);
+    			parameters.put(key, value);
+    		}
+    	}	
     	
     	var jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
     
